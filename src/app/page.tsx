@@ -595,13 +595,17 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-center gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                <Linkedin className="w-4 h-4 mr-2" />
-                LinkedIn
+              <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+                <a href="https://www.linkedin.com/in/yosri-ben-aicha-43b7a8262/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
               </Button>
-              <Button size="lg" variant="outline">
-                <Github className="w-4 h-4 mr-2" />
-                GitHub
+              <Button size="lg" variant="outline" asChild>
+                <a href="https://github.com/Yosri-ben-aicha" target="_blank" rel="noopener noreferrer">
+                  <Github className="w-4 h-4 mr-2" />
+                  GitHub
+                </a>
               </Button>
             </div>
           </div>
