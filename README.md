@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio Professionnel - Yosri Ben Aicha
 
-## Getting Started
+Portfolio moderne et professionnel développé avec Next.js 15, TypeScript, et Tailwind CSS.
 
-First, run the development server:
+## ✨ Fonctionnalités
+
+- 🎨 Design moderne et professionnel
+- 📱 Entièrement responsive
+- ⚡ Performance optimisée
+- 🔍 SEO optimisé
+- 🎭 Animations fluides avec Intersection Observer
+- 🧩 Architecture modulaire et scalable
+- ♿ Accessible (WCAG compliant)
+
+## 🛠️ Technologies
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **UI Components:** shadcn/ui
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+
+## 📦 Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+# Installer les dépendances
+bun install
+
+# Lancer le serveur de développement
 bun dev
+
+# Build de production
+bun run build
+
+# Démarrer en production
+bun start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Déploiement
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Déploiement sur Vercel (Automatique)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Le projet est configuré pour un déploiement automatique sur Vercel :
 
-## Learn More
+1. **Connectez votre repository GitHub à Vercel**
+   - Allez sur https://vercel.com/new
+   - Importez votre repository `yosri-portfolio`
+   - Vercel détectera automatiquement Next.js
 
-To learn more about Next.js, take a look at the following resources:
+2. **Configuration automatique**
+   - Framework: Next.js ✅
+   - Build Command: `next build` ✅
+   - Output Directory: `.next` ✅
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Domaine personnalisé** (Optionnel)
+   - Voir [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md) pour les instructions détaillées
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### URL de Déploiement
 
-## Deploy on Vercel
+- **GitHub:** https://github.com/Yosri-ben-aicha/yosri-portfolio
+- **Vercel:** Vérifiez votre dashboard Vercel pour l'URL exacte
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Structure du Projet
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/
+│   ├── page.tsx          # Page principale
+│   ├── layout.tsx         # Layout avec métadonnées SEO
+│   ├── globals.css        # Styles globaux
+│   └── ClientBody.tsx     # Client component wrapper
+├── components/
+│   ├── Navigation.tsx     # Navigation avec scroll spy
+│   ├── Hero.tsx           # Section hero
+│   ├── About.tsx          # Section à propos
+│   ├── Skills.tsx         # Section compétences
+│   ├── Experience.tsx     # Section expérience
+│   ├── Projects.tsx       # Section projets
+│   ├── Education.tsx      # Section formation
+│   ├── Certifications.tsx # Section certifications
+│   ├── Contact.tsx        # Section contact
+│   ├── Footer.tsx         # Footer
+│   └── Section.tsx        # Composant section réutilisable
+└── hooks/
+    ├── useScrollSpy.ts    # Hook pour détecter la section active
+    └── useIntersectionObserver.ts # Hook pour animations au scroll
+```
+
+## 🎯 Configuration du Domaine Personnalisé
+
+Pour obtenir un domaine comme `yosri-ben-aicha.engineer` :
+
+1. **Achetez un domaine** (voir [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md))
+2. **Dans Vercel Dashboard:**
+   - Settings → Domains → Add Domain
+   - Entrez votre domaine
+   - Suivez les instructions DNS
+
+Voir le guide complet dans [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)
+
+## 🔧 Configuration
+
+### Variables d'Environnement
+
+Aucune variable d'environnement requise pour le moment.
+
+### Optimisations
+
+- ✅ Image optimization (AVIF/WebP)
+- ✅ Compression activée
+- ✅ React Strict Mode
+- ✅ SEO optimisé
+- ✅ Performance optimisée
+
+## 📝 License
+
+© 2025 Yosri Ben Aicha. Tous droits réservés.
+
+## 📧 Contact
+
+- **Email:** benaicha@et.esiea.fr
+- **LinkedIn:** [yosri-ben-aicha-43b7a8262](https://www.linkedin.com/in/yosri-ben-aicha-43b7a8262/)
+- **GitHub:** [Yosri-ben-aicha](https://github.com/Yosri-ben-aicha)
