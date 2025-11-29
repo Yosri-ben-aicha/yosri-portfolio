@@ -44,7 +44,7 @@ export default function Footer({ onScrollToTop }: FooterProps) {
                   className="bg-primary hover:bg-primary/90"
                   asChild
                 >
-                  <a href="mailto:benaicha@et.esiea.fr">
+                  <a href="/cv-Yosri-Ben-Aicha.pdf" download="cv-Yosri-Ben-Aicha.pdf">
                     <Download className="w-4 h-4 mr-2" />
                     Télécharger CV
                   </a>
