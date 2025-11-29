@@ -1,14 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   allowedDevOrigins: ["*.preview.same-app.com"],
+  // Enable image optimization for Vercel (native Next.js Image Optimization)
   images: {
-    unoptimized: true,
-    domains: [
-      "source.unsplash.com",
-      "images.unsplash.com",
-      "ext.same-assets.com",
-      "ugc.same-assets.com",
-    ],
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
@@ -32,6 +27,10 @@ const nextConfig = {
       },
     ],
   },
+  // Performance optimizations
+  compress: true,
+  poweredByHeader: false,
+  reactStrictMode: true,
 };
 
 module.exports = nextConfig;

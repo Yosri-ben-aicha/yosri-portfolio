@@ -15,14 +15,53 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Yosri Ben Aicha - Ingénieur IA & Data Scientist",
-  description: "Portfolio de Yosri Ben Aicha, Ingénieur IA & Data Scientist spécialisé en Machine Learning, MLOps et architectures RAG. Étudiant à l'ESIEA Paris.",
-  keywords: ["Data Scientist", "Machine Learning", "IA", "Artificial Intelligence", "MLOps", "Python", "Portfolio"],
+  title: "Yosri Ben Aicha - Ingénieur IA & Data Scientist | Portfolio",
+  description: "Portfolio professionnel de Yosri Ben Aicha, Ingénieur IA & Data Scientist spécialisé en Machine Learning, MLOps, architectures RAG et systèmes d'IA agentique. Étudiant en 3ème année à l'ESIEA Paris. Disponible pour stage Février 2026.",
+  keywords: [
+    "Yosri Ben Aicha",
+    "Data Scientist",
+    "Machine Learning",
+    "IA",
+    "Artificial Intelligence",
+    "MLOps",
+    "Python",
+    "Portfolio",
+    "Ingénieur IA",
+    "Deep Learning",
+    "Azure AI",
+    "ESIEA",
+    "Paris",
+  ],
   authors: [{ name: "Yosri Ben Aicha" }],
+  creator: "Yosri Ben Aicha",
+  publisher: "Yosri Ben Aicha",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Yosri Ben Aicha - Ingénieur IA & Data Scientist",
-    description: "Portfolio de Yosri Ben Aicha, spécialisé en intelligence artificielle et data science",
+    description: "Portfolio professionnel de Yosri Ben Aicha, spécialisé en intelligence artificielle, machine learning et data science. Disponible pour stage Février 2026.",
     type: "website",
+    locale: "fr_FR",
+    siteName: "Yosri Ben Aicha Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yosri Ben Aicha - Ingénieur IA & Data Scientist",
+    description: "Portfolio professionnel spécialisé en intelligence artificielle et data science",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
   },
 };
 
